@@ -16,7 +16,7 @@
   </style>
 </head>
 
-<script src="http://d3js.org/d3.v4.min.js" charset="utf-8" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js" charset="utf-8" type="text/javascript"></script>
 <script src="../d3.timeline.js" charset="utf-8" type="text/javascript"></script>
 
 <script>
@@ -29,7 +29,7 @@
   colors = d3.scaleOrdinal()
     .range(["#6798c1", "#677468", "#d7ce85", "#bf4730", "#9c5166"]);
 
-  d3.json("art_movements.json", function (json) {
+  d3.json("art_movements.json").then(function(json) {
     timelineBands = timeline(json);
 
     d3.select("svg").selectAll("g")
