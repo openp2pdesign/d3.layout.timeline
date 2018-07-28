@@ -1,3 +1,5 @@
+import "d3";
+
 (function() {
   d3.timeline = function() {
     var timelines = [];
