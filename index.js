@@ -1,3 +1,3 @@
-timeline = require("./src/timeline");
+timeline = require("./d3.timeline");
 
 module.exports = timeline;
