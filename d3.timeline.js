@@ -14,7 +14,7 @@
     var size = [500, 100];
     var timelineExtent = [-Infinity, Infinity];
     var setExtent = [];
-    var displayScale = d3.scaleLinear();
+    var displayScale = d3.scaleTime();
     var swimlanes = { root: [] };
     var swimlaneNumber = 1;
     var padding = 0;
